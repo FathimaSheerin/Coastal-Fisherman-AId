@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Illegal fishing Predictor</title>
+  <link rel="stylesheet" href="../static/style.css">
+  <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+  <link rel="website icon" type="png" href = "static\WhatsApp Image 2023-02-21 at 4.02.17 PM.jpeg">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body style="background-image: url('../static/Fisherman.png');">
+
+  <!-- Website Title -->
+  <div class="container">
+    <h2 class='container-heading'><span class="heading_font">Illgeal Fishing Predictor</span></h2>
+  </div>
+
+  <!-- Text Area -->
+  <div class="ml-container">
+    <form action="{{ url_for('predict')}}" method="POST"> 
+
+      
+        <label for="Latitude">Latitude</label>
+        <input type="text" id="Latitude" name="Latitude" placeholder="Enter Latitude"><br>
+
+        <label for="Longitude">Longitude</label>
+        <input type="text" id="Longitude" name="Longitude" placeholder="Enter Longitude"><br>
+
+
+        <input type="submit" class="my-cta-button" value="Predict">
+    </form>
+  </div>
+
+</body>
+
+</html>
